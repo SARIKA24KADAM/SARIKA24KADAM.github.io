@@ -10,7 +10,7 @@
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
     a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}header{position:sticky;top:0;background:#101214ef;border-bottom:1px solid var(--line);backdrop-filter:blur(12px);z-index:2}
     nav{max-width:var(--max);margin:auto;padding:14px 24px;display:flex;gap:20px;flex-wrap:wrap}nav a{font-size:.88rem;color:var(--ink)}main{max-width:var(--max);margin:auto;padding:0 24px}
-    section{padding:80px 0;border-bottom:1px solid var(--line);scroll-margin-top:62px}.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;border:0}
+    section{padding:80px 0;border-bottom:1px solid var(--line);scroll-margin-top:62px}.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;border:0}.portrait{width:190px;height:190px;object-fit:cover;object-position:center;border:3px solid var(--accent);border-radius:50%;margin:0 0 28px;box-shadow:0 12px 36px #0008}
     .eyebrow,.date{color:var(--accent);font-size:.83rem;letter-spacing:.08em;text-transform:uppercase}.eyebrow{margin:0 0 12px}h1{font-size:clamp(3rem,8vw,6.4rem);letter-spacing:-.065em;line-height:.98;margin:0 0 24px}h2{font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-.04em;margin:0 0 25px}h3{margin:0;font-size:1.2rem}p{max-width:760px;color:var(--muted);margin:12px 0}.subtitle{font-size:clamp(1.15rem,2.3vw,1.55rem);max-width:820px;color:var(--ink)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.button{display:inline-block;padding:10px 16px;border:1px solid var(--line);border-radius:4px;color:var(--ink)}.button.primary{background:var(--accent);color:#21170f;border-color:var(--accent);font-weight:650}
     .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:22px}.card p{margin-bottom:0}.entry{padding:0 0 28px 22px;border-left:1px solid var(--line);position:relative}.entry:before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--accent)}.entry+.entry{margin-top:12px}.date{margin:5px 0 8px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.tag{border:1px solid var(--line);border-radius:99px;padding:4px 10px;color:var(--muted);font-size:.84rem}footer{max-width:var(--max);margin:auto;padding:28px 24px;color:var(--muted);font-size:.9rem}
     @media(max-width:680px){nav{gap:12px;padding:12px 16px}main{padding:0 18px}section{padding:60px 0}.grid{grid-template-columns:1fr}footer{padding:24px 18px}}
@@ -19,7 +19,7 @@
 <body>
   <header><nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#volunteering">Volunteering</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></header>
   <main>
-    <section class="hero" id="about">
+    <section class="hero" id="about"><img class="portrait" src="assets/sarika-kadam.jpg" alt="Portrait of Sarika Kadam" width="190" height="190" fetchpriority="high">
       <p class="eyebrow">Data Science · Research · Machine Learning</p>
       <h1>Sarika<br>Kadam</h1>
       <p class="subtitle">Data Scientist &amp; Researcher | Fully Funded PhD Candidate in Computer Science, UQAC | Machine Learning | Python | SQL | PySpark | Ex-HCLTech, Orange Telecom | Academic Excellence Award 🏆</p>
